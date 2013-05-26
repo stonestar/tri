@@ -1,0 +1,5 @@
+digraph "long[] getBorders()" {
+    label="long[] getBorders()";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,style=filled,fillcolor=lightgray,label="r0 := @this\lr1 = newarray (long)[3]\l$l0 = r0.lborderA\lr1[0] = $l0\l$l1 = r0.lborderB\lr1[1] = $l1\l$l2 = r0.lborderC\lr1[2] = $l2\lreturn r1\l",];
+}

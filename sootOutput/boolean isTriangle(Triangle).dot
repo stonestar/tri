@@ -1,0 +1,34 @@
+digraph "boolean isTriangle(Triangle)" {
+    label="boolean isTriangle(Triangle)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="r0 := @this\lr1 := @parameter0\lz0 = 0\l$l0 = r1.lborderA\l$b1 = $l0 cmp 0L\lif $b1 <= 0 goto label0\l",];
+    "1" [label="$l2 = r1.lborderA\l$b3 = $l2 cmp 9223372036854775807L\lif $b3 > 0 goto label0\l",];
+    "0"->"1";
+    "10" [style=filled,fillcolor=lightgray,label="label0:\nreturn z0\l",];
+    "0"->"10";
+    "2" [label="$l4 = r1.lborderB\l$b5 = $l4 cmp 0L\lif $b5 <= 0 goto label0\l",];
+    "1"->"2";
+    "1"->"10";
+    "3" [label="$l6 = r1.lborderB\l$b7 = $l6 cmp 9223372036854775807L\lif $b7 > 0 goto label0\l",];
+    "2"->"3";
+    "2"->"10";
+    "4" [label="$l8 = r1.lborderC\l$b9 = $l8 cmp 0L\lif $b9 <= 0 goto label0\l",];
+    "3"->"4";
+    "3"->"10";
+    "5" [label="$l10 = r1.lborderC\l$b11 = $l10 cmp 9223372036854775807L\lif $b11 > 0 goto label0\l",];
+    "4"->"5";
+    "4"->"10";
+    "6" [label="$l12 = r1.lborderA\l$l13 = r1.lborderB\l$l14 = r0.diffOfBorders($l12, $l13)\l$l15 = r1.lborderC\l$b16 = $l14 cmp $l15\lif $b16 >= 0 goto label0\l",];
+    "5"->"6";
+    "5"->"10";
+    "7" [label="$l17 = r1.lborderB\l$l18 = r1.lborderC\l$l19 = r0.diffOfBorders($l17, $l18)\l$l20 = r1.lborderA\l$b21 = $l19 cmp $l20\lif $b21 >= 0 goto label0\l",];
+    "6"->"7";
+    "6"->"10";
+    "8" [label="$l22 = r1.lborderC\l$l23 = r1.lborderA\l$l24 = r0.diffOfBorders($l22, $l23)\l$l25 = r1.lborderB\l$b26 = $l24 cmp $l25\lif $b26 >= 0 goto label0\l",];
+    "7"->"8";
+    "7"->"10";
+    "9" [label="z0 = 1\l",];
+    "8"->"9";
+    "8"->"10";
+    "9"->"10";
+}
